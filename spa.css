@@ -1,0 +1,68 @@
+body.harmony-spa {
+    margin: 0;
+    overflow: hidden;
+    background: #101522;
+}
+
+#sidebar {
+    display: none !important;
+}
+
+#harmony-toolbar {
+    position: fixed;
+    z-index: 20;
+    top: 16px;
+    right: 16px;
+}
+
+#harmony-close {
+    width: 44px;
+    height: 44px;
+    border: 1px solid #ffffff80;
+    border-radius: 50%;
+    color: #fff;
+    background: #171e2dcc;
+    font: 28px/1 system-ui, sans-serif;
+    cursor: pointer;
+}
+
+#harmony-close:hover,
+#harmony-close:focus-visible {
+    background: #303b52;
+}
+
+#harmony-audio {
+    display: none;
+}
+
+#page-container.harmony-slide-stage {
+    position: fixed !important;
+    top: 56px !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden !important;
+    background: #101522 !important;
+    transition: none !important;
+}
+
+#page-container.harmony-slide-stage > .pf {
+    position: absolute !important;
+    top: 0 !important;
+    left: -100000px !important;
+    display: block !important;
+    flex: none;
+    margin: 0 !important;
+    visibility: hidden !important;
+    box-shadow: none !important;
+}
+
+#page-container.harmony-slide-stage > .pf.harmony-active-slide {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    visibility: visible !important;
+}
